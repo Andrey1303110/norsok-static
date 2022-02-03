@@ -4,7 +4,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         speed: 650,
         arrows: true,
-        dots: true,
+        dots: false,
         infinite: false,
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
