@@ -47,3 +47,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.main-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-section section {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+section:nth-child(1) {
+  background: red;
+}
+
+section:nth-child(2) {
+  background: green;
+}
+
+section:nth-child(3) {
+  background: blue;
+}

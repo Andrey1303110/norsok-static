@@ -1,1 +1,25 @@
 @import "reset";
+
+$width: 1920;
+
+.main-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-section section {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+section:nth-child(1) {
+    background: red;
+}
+section:nth-child(2) {
+    background: green;
+}
+section:nth-child(3) {
+    background: blue;
+}
+
+//height: 18/$width*100vw;
