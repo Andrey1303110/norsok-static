@@ -1,25 +1,48 @@
+@import "poppins";
 @import "reset";
 
 $width: 1920;
+//height: 18/$width*100vw; it is return 18px in a vw, in example it is a .9375vw
+
+body {
+    background: #E5E5E5;
+    overflow: hidden;
+    font-family:'Poppins';
+}
 
 .main-section {
     width: 100vw;
     height: 100vh;
 }
 
+section:nth-child(1) {
+    background: rgba(47, 0, 255, 0.39);
+}
+section:nth-child(2) {
+    background: rgba(0, 128, 0, 0.384);
+}
+
 .main-section section {
     min-width: 100vw;
     min-height: 100vh;
+    &.home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .side_left {
+            height: 100%;
+            width: 1179/$width*100vw;
+            padding: 146/$width*100vw 101/$width*100vw 101/$width*100vw;
+            .title {
+                width: 806/$width*100vw;
+                .bold_text {
+                    width: 100%;
+                }
+            }
+        }
+        .side_right {
+            height: 100%;
+            width: ($width - 1179)/$width*100vw;
+        }
+    }
 }
-
-section:nth-child(1) {
-    background: red;
-}
-section:nth-child(2) {
-    background: green;
-}
-section:nth-child(3) {
-    background: blue;
-}
-
-//height: 18/$width*100vw;
