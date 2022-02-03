@@ -210,6 +210,11 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background: #E5E5E5;
   overflow: hidden;
@@ -219,14 +224,6 @@ body {
 .main-section {
   width: 100vw;
   height: 100vh;
-}
-
-section:nth-child(1) {
-  background: rgba(47, 0, 255, 0.39);
-}
-
-section:nth-child(2) {
-  background: rgba(0, 128, 0, 0.384);
 }
 
 .main-section section {
@@ -247,10 +244,28 @@ section:nth-child(2) {
           justify-content: center;
 }
 
+.main-section section.home .side_left, .main-section section.home .side_right {
+  height: 100vh;
+}
+
 .main-section section.home .side_left {
-  height: 100%;
   width: 61.40625vw;
   padding: 7.60417vw 5.26042vw 5.26042vw;
+  background-color: #B55A36;
+  background-image: url(../media/images/spikelet.svg);
+  background-repeat: no-repeat;
+  background-size: 27.34375vw;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-section section.home .side_left .title {
@@ -273,6 +288,127 @@ section:nth-child(2) {
 }
 
 .main-section section.home .side_right {
-  height: 100%;
   width: 38.59375vw;
+}
+
+.main-section section.home .side_right .all_blocks {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-section section.home .side_right .footer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.all_blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all_blocks .block {
+  width: 33.22917vw;
+  height: 25.41667vw;
+  background: white;
+  padding: 1.5625vw 1.71875vw 0.9375vw;
+}
+
+.footer {
+  padding: 1.40625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .arrow {
+  width: 8.64583vw;
+  height: 2.5vw;
+  padding: 0.52083vw 0.98958vw 0.52083vw 0.72917vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #B55A36;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer .arrow.arrow_left {
+  width: 6.97917vw;
+}
+
+.footer .arrow img {
+  width: 0.65104vw;
+  height: 0.625vw;
+}
+
+.trademarks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.trademarks .block {
+  width: 17.39583vw;
+  height: 7.91667vw;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.trademarks .block:not(:nth-child(1)) {
+  margin-left: 0.52083vw;
+}
+
+.trademarks .block img {
+  width: 9.58333vw;
+  height: 4.01042vw;
 }
