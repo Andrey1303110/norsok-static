@@ -16,9 +16,9 @@ $(document).ready(function(){
 
     $('button.play').click(function(){
         isPlayed = true;
-        $('.video-section').css('left', '0vw');
-        $('video')[0].src = 'media/video/'+ $(this)[0].dataset.name +'.mp4';
         $('video')[0].poster = 'media/images/poster_'+ $(this)[0].dataset.name +'.png';
+        $('video')[0].src = 'media/video/'+ $(this)[0].dataset.name +'.mp4';
+        $('.video-section').css('left', '0vw');
         $('.video-section').on('transitionend webkitTransitionEnd oTransitionEnd', function () {
             if (isPlayed) $('video')[0].play();
         })
