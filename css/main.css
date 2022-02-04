@@ -222,6 +222,10 @@ body {
   position: relative;
 }
 
+button, .close, .arrow {
+  cursor: pointer;
+}
+
 .main-section {
   width: 100vw;
   height: 100vh;
@@ -525,8 +529,8 @@ section.content .all_blocks .block:nth-child(2), section.content .all_blocks .bl
   position: absolute;
   top: 0;
   left: 100vw;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out, height 0s;
+  transition: 1s ease-in-out, height 0s;
 }
 
 .video-section video {
@@ -534,4 +538,14 @@ section.content .all_blocks .block:nth-child(2), section.content .all_blocks .bl
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.video-section .close {
+  position: absolute;
+  top: 1.30208vw;
+  right: 1.30208vw;
+  width: 1.30208vw;
+  height: 1.30208vw;
+  -webkit-transition: .75s ease-in-out;
+  transition: .75s ease-in-out;
 }
