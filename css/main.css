@@ -544,8 +544,8 @@ section.content .all_blocks .block:nth-child(2), section.content .all_blocks .bl
   position: absolute;
   top: 1.30208vw;
   right: 1.30208vw;
-  width: 1.30208vw;
-  height: 1.30208vw;
+  width: 2.08333vw;
+  height: 2.08333vw;
   -webkit-transition: .75s ease-in-out;
   transition: .75s ease-in-out;
 }
