@@ -572,9 +572,11 @@ section.content .all_blocks .block:nth-child(2), section.content .all_blocks .bl
   width: 4.16667vw;
   height: 1.25vw;
   bottom: 3.33333vh;
-  left: 50%;
+  left: 150%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .main-section .slick-dots li {

@@ -5,12 +5,18 @@ $(document).ready(function(){
         speed: 1000,
         arrows: true,
         dots: true,
+        appendDots: $('.footer'),
         infinite: false,
         prevArrow: $('.arrow.arrow_left'),
         nextArrow: $('.arrow.arrow_right'),
     })
 
     $('.arrow.arrow_right').last().css('display', 'none');
+
+    //TODO Slider
+    /*$('.arrow_right').first().click(function(){
+        $('.slick-dots').css('left', '50%');
+    })*/
 
     let isPlayed = false;
 

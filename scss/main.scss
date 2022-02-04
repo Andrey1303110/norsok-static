@@ -261,8 +261,9 @@ section.content {
         width: 80/$width*100vw;
         height: 24/$width*100vw;
         bottom: 36/$height*100vh;
-        left: 50%;
+        left: 150%;
         transform: translateX(-50%);
+        transition: 1s ease-in-out;
         li {
             width: 6/$width*100vw;
             height: 6/$width*100vw;
