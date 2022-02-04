@@ -567,3 +567,36 @@ section.content .all_blocks .block:nth-child(2), section.content .all_blocks .bl
   -webkit-transition: .75s ease-in-out;
   transition: .75s ease-in-out;
 }
+
+.main-section .slick-dots {
+  width: 4.16667vw;
+  height: 1.25vw;
+  bottom: 3.33333vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main-section .slick-dots li {
+  width: 0.3125vw;
+  height: 0.3125vw;
+  margin: 0 0.15625vw;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.main-section .slick-dots li.slick-active {
+  width: 2.60417vw;
+}
+
+.main-section .slick-dots li button {
+  width: 100%;
+  height: 100%;
+  padding: 0.15625vw;
+  background: #B55A36;
+  border-radius: 0.15625vw;
+}
+
+.main-section .slick-dots li button:before {
+  content: none;
+}
