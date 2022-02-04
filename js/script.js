@@ -9,4 +9,12 @@ $(document).ready(function(){
         prevArrow: $('.arrow.arrow_left'),
         nextArrow: $('.arrow.arrow_right'),
     })
+
+    $('button.play').click(function(){
+        $('.video-section').css('left', '0vw');
+    })
+    $('video').on('ended', function(){
+        $('.video-section').css('left', '100vw');
+        $(this)[0].currentTime = '0';
+    })
 })

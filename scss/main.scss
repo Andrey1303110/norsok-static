@@ -13,6 +13,7 @@ body {
     background: #E5E5E5;
     overflow: hidden;
     font-family:'Poppins';
+    position: relative;
 }
 
 .main-section {
@@ -220,5 +221,19 @@ section.content {
             width: 184/$width*100vw;
             height: 77/$width*100vw;
         }
+    }
+}
+
+.video-section {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    transition: 1s ease-in-out;
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
