@@ -295,6 +295,16 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-right: 0.10417vw;
+}
+
+.main-section section.home .side_right .all_blocks .block {
+  width: 86.5%;
+  height: 25.46875vw;
+}
+
+.main-section section.home .side_right .all_blocks .block:not(:nth-child(1)) {
+  margin-top: 0.10417vw;
 }
 
 .main-section section.home .side_right .footer {
@@ -313,13 +323,96 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  height: 91%;
 }
 
 .all_blocks .block {
-  width: 33.22917vw;
+  position: relative;
+  width: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
   height: 25.41667vw;
   background: white;
   padding: 1.5625vw 1.71875vw 0.9375vw;
+  margin-top: 0.10417vw;
+}
+
+.all_blocks .block .img_with_text {
+  position: relative;
+  width: 100%;
+  height: 15.36458vw;
+}
+
+.all_blocks .block .img_with_text img {
+  width: 100%;
+  height: 100%;
+}
+
+.all_blocks .block .img_with_text .bottom_title {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Poppins';
+  font-size: 1.35417vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.61458vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  background: rgba(93, 137, 180, 0.9);
+  padding: 1.01562vw 1.25vw 1.01562vw 1.04167vw;
+  max-width: 86%;
+}
+
+.all_blocks .block .img_with_text .bottom_title .play {
+  margin-left: 2.23958vw;
+}
+
+.all_blocks .block .img_with_text .bottom_title .play img {
+  width: 1.04167vw;
+  height: 18 192000vw;
+}
+
+.all_blocks .block .description {
+  font-family: 'Poppins';
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.45833vw;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 1.14583vw;
+}
+
+.all_blocks .block .time {
+  position: absolute;
+  bottom: 0.9375vw;
+  font-family: 'Poppins Light';
+  font-size: 0.72917vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.45833vw;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: .4;
+}
+
+section.content .all_blocks {
+  padding: 0 0.10417vw;
+}
+
+section.content .all_blocks .block:nth-child(2), section.content .all_blocks .block:nth-child(5) {
+  margin-left: 0.10417vw;
+  margin-right: 0.10417vw;
 }
 
 .footer {
@@ -356,12 +449,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #B55A36;
+  border: 0.10417vw solid #B55A36;
   font-family: 'Poppins';
-  font-size: 18px;
+  font-size: 0.9375vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.45833vw;
   letter-spacing: 0em;
   text-align: left;
 }
