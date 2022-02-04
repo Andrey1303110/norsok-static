@@ -63,9 +63,11 @@ body {
             .all_blocks {
                 justify-content: flex-end;
                 padding-right: 2/$width*100vw;
+                width: 86.5%;
+                margin-left: auto;
                 .block {
-                    width: 86.5%;
-                    height: 489/$width*100vw;
+                    width: 100%;
+                    //height: 489/$width*100vw;
                     &:not(:nth-child(1)) {
                         margin-top: 2/$width*100vw;
                     }
@@ -83,12 +85,13 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 91%;
+    height: 91vh;
     .block {
         position: relative;
         width: 33%;
         flex: 1 auto;
-        height: 488/$width*100vw;
+        //height: 488/$width*100vw;
+        height: 45.2vh;
         background: white;
         padding: 30/$width*100vw 33/$width*100vw 18/$width*100vw;
         margin-top: 2/$width*100vw;
@@ -103,8 +106,10 @@ body {
             .bottom_title {
                 position: absolute;
                 bottom: 0;
+                min-height: 70/$width*100vw;
                 display: flex;
                 flex-direction: row;
+                align-items: center;
                 font-family: 'Poppins';
                 font-size: 26/$width*100vw;
                 font-style: normal;
@@ -114,13 +119,16 @@ body {
                 text-align: left;
                 color: white;
                 background: rgba(93, 137, 180, .9);
-                padding: 19.5/$width*100vw 24/$width*100vw 19.5/$width*100vw 20/$width*100vw;
+                padding: 13/$width*100vw 24/$width*100vw 13/$width*100vw 20/$width*100vw;
                 max-width: 86%;
                 .play {
                     margin-left: 43/$width*100vw;
+                    padding: 0;
+                    border: none;
+                    background: none;
                     img {
                         width: 20/$width*100vw;
-                        height: 18$width*100vw;
+                        height: 18/$width*100vw;
                     }
                 }
             }
