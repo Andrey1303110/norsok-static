@@ -10,7 +10,7 @@ $(document).ready(function(){
         nextArrow: $('.arrow.arrow_right'),
     })
 
-    $('.arrow.arrow_right')[$('.arrow.arrow_right').length-1].disabled = true;
+    $('.arrow.arrow_right').last().css('display', 'none');
 
     let isPlayed = false;
 
