@@ -272,6 +272,7 @@
                 nextArrow: $('.arrow.arrow_right'),
             })
 
+            $('.arrow.arrow_left').first().css('display', 'none');
             $('.arrow.arrow_right').last().css('display', 'none');
 
             /*
@@ -309,11 +310,16 @@
                     $('.video-section .close').css('transform', 'rotate(0deg)');
                 });
             })
+            
+            /*
+            //TODO time for video
 
             var date = new Date(0);
             date.setSeconds(98); // specify value for SECONDS here
             var timeString = date.toISOString().substr(11, 8);
             console.log(timeString)
+            */
+
         })
     </script>
 </body>
