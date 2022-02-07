@@ -114,8 +114,8 @@ button, .close, .arrow {
                 position: absolute;
                 bottom: 0;
                 //min-height: 70/$width*100vw;
-                height: 23.7%;
-                min-height: 31/$width*100vw;
+                //height: 23.7%;
+                min-height: fit-content;
                 display: flex;
                 flex-direction: row;
                 align-items: center;

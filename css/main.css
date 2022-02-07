@@ -379,8 +379,9 @@ button, .close, .arrow {
 .all_blocks .block .img_with_text .bottom_title {
   position: absolute;
   bottom: 0;
-  height: 23.7%;
-  min-height: 1.61458vw;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
