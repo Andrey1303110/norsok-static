@@ -254,12 +254,67 @@
         </section>
     </div>
     <div class="video-section">
-        <video width="auto" height="auto" controls="" poster="">
-            <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <video width="auto" src="" height="auto" controls="" poster="">
             Тег video не поддерживается вашим браузером.
         </video>
         <img class="close" src="media/images/close.svg" loading="lazy" alt="" srcset="">
     </div>
-    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.main-section').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 1000,
+                arrows: true,
+                dots: false,
+                infinite: false,
+                prevArrow: $('.arrow.arrow_left'),
+                nextArrow: $('.arrow.arrow_right'),
+            })
+
+            $('.arrow.arrow_right').last().css('display', 'none');
+
+            /*
+            //TODO Slider
+            
+            $('.arrow_right').first().click(function(){
+                $('.slick-dots').css('left', '50%');
+            })
+            */
+
+            let isPlayed = false;
+
+            $('button.play').click(function(){
+                isPlayed = true;
+                $('video')[0].poster = 'media/images/poster_'+ $(this)[0].dataset.name +'.webp';
+                $('video')[0].src = 'media/video/'+ $(this)[0].dataset.name +'.mp4';
+                $('.video-section').css('left', '0vw');
+                $('.video-section').on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+                    if (isPlayed) $('video')[0].play();
+                })
+            })
+
+            $('video').on('ended', function(){
+                isPlayed = false;
+                $('.video-section').css('left', '100vw');
+                $(this)[0].currentTime = '0';
+            })
+            $('.video-section .close').click(function(){
+                isPlayed = false;
+                $(this).css('transform', 'rotate(360deg)');
+                $(this).on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+                    $('.video-section').css('left', '100vw');
+                    $('video')[0].pause()
+                    $('video')[0].currentTime = '0';
+                    $('.video-section .close').css('transform', 'rotate(0deg)');
+                });
+            })
+
+            var date = new Date(0);
+            date.setSeconds(98); // specify value for SECONDS here
+            var timeString = date.toISOString().substr(11, 8);
+            console.log(timeString)
+        })
+    </script>
 </body>
 </html>
