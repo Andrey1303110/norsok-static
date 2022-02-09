@@ -325,6 +325,7 @@ button, .close, .arrow {
 
 .main-section section.home .side_right .all_blocks .block {
   width: 100%;
+  max-width: 100%;
 }
 
 .main-section section.home .side_right .all_blocks .block:not(:nth-child(1)) {
