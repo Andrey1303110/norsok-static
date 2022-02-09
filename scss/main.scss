@@ -95,6 +95,7 @@ button, .close, .arrow {
     .block {
         position: relative;
         width: 33%;
+        max-width: 49.5%;
         flex: 1 auto;
         height: 488/$height*100vh;
         background: white;

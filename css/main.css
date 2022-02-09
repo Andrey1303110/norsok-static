@@ -354,6 +354,7 @@ button, .close, .arrow {
 .all_blocks .block {
   position: relative;
   width: 33%;
+  max-width: 49.5%;
   -webkit-box-flex: 1;
       -ms-flex: 1 auto;
           flex: 1 auto;
